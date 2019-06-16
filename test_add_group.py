@@ -11,17 +11,20 @@ class test_add_group(unittest.TestCase):
 
     def test_add_group(self):
         wd = self.wd
-        # open home page
         self.open_home_page(wd)
-        # login
-        self.login(wd)
-        # open groups page
+        self.login(wd, username="admin", password="secret")
         self.open_groups_page(wd)
-        # init group creation/создаем новую группу
-        self.create_group(wd)
-        # return to groups page/возврат на страницу "группы"
+        self.create_group(wd, name="test", header="test", footer="test")
         self.return_to_groups_page(wd)
-        # logout/выход из аккаунта
+        self.loguot(wd)
+
+    def test_add_empty_group(self): # пример создания теста с не заполненными параметрами name, header, footer
+        wd = self.wd                # аналогично такими тестами можно проверять и другие имеющиеся параметры
+        self.open_home_page(wd)
+        self.login(wd, username="admin", password="secret")
+        self.open_groups_page(wd) # open groups page
+        self.create_group(wd, name="", header="", footer="")
+        self.return_to_groups_page(wd)
         self.loguot(wd)
 
     def loguot(self, wd):
@@ -30,30 +33,32 @@ class test_add_group(unittest.TestCase):
     def return_to_groups_page(self, wd):
         wd.find_element_by_link_text("group page").click()
 
-    def create_group(self, wd): # метод который преобразовали из строк кода в "def test_add_group"
+    def create_group(self, wd, name, header, footer): # метод который преобразовали из строк кода в "def test_add_group"
         wd.find_element_by_name("new").click()
         # fill group form/заполнение формы
         wd.find_element_by_name("group_name").click()
         wd.find_element_by_name("group_name").clear()
-        wd.find_element_by_name("group_name").send_keys("test")
+        wd.find_element_by_name("group_name").send_keys(name)
         wd.find_element_by_name("group_header").click()
         wd.find_element_by_name("group_header").clear()
-        wd.find_element_by_name("group_header").send_keys("test")
+        wd.find_element_by_name("group_header").send_keys(header)
         wd.find_element_by_name("group_footer").click()
         wd.find_element_by_name("group_footer").clear()
-        wd.find_element_by_name("group_footer").send_keys("test")
+        wd.find_element_by_name("group_footer").send_keys(footer)
         # submit group creation/нажатие на кнопку "submit"
         wd.find_element_by_name("submit").click()
 
     def open_groups_page(self, wd):
         wd.find_element_by_link_text("groups").click()
 
-    def login(self, wd):
+    def login(self, wd, username, password):
         wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys("admin")
+        wd.find_element_by_name("user").send_keys(username) # выполнена параметризация, данные выносятся в параметры
+                                                            # метода "def login", чтобы можно было тестировать под
+                                                            # разными пользователями
         wd.find_element_by_name("pass").click()
         wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys("secret")
+        wd.find_element_by_name("pass").send_keys(password) # аналогичная ситуация в коменте выше
         wd.find_element_by_xpath("//input[@value='Login']").click()
 
     def open_home_page(self, wd):
