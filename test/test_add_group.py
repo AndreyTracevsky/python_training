@@ -11,12 +11,12 @@ def app(request): # функция которая будет инициализ�
 
 def test_add_group(app): # тестовый метод
     #wd = self.wd - Эта строка кода вырезается и вставляется в каждый из вспомогательных методов.
-    app.login(username="admin", password="secret")
+    app.session.login(username="admin", password="secret")
     app.create_group(Group(name="test", header="test", footer="test"))
-    app.loguot()
+    app.session.loguot()
 
 def test_add_empty_group(app): # 2-й тестовый метод
     #wd = self.wd - Эта строка кода вырезается и вставляется в каждый из вспомогательных методов.
-    app.login(username="admin", password="secret")
+    app.session.login(username="admin", password="secret")
     app.create_group(Group(name="", header="", footer=""))
-    app.loguot()
+    app.session.loguot()
