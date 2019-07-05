@@ -1,6 +1,6 @@
 import pytest # переход на использование фрэймворка pytest
-from group import Group # импортируем из файла group.py класс Group
-from application import Application # импортируем из файла application.py класс Application
+from model.group import Group # импортируем из файла group.py класс Group
+from fixture.application import Application # импортируем из файла application.py класс Application
 
 
 @pytest.fixture() # пометка для pytest, чтобы он знал что это не просто функция, а ф-ция создающая фикструру.
