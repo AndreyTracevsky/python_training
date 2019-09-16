@@ -32,6 +32,7 @@ class GroupHelper:
         wd.find_element_by_name("delete").click()
         self.return_to_groups_page()
 
+
     def open_groups_page(self): # вспомогательный метод
         wd = self.app.wd
         wd.find_element_by_link_text("groups").click()
