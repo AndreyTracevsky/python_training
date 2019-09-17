@@ -12,6 +12,13 @@ class Application:
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
 
+    def is_valid(self):
+       try:
+           self.wd.current_url # ЗАПРОС В БРАУЗЕР АДРЕС ОТКРЫТОЙ ТЕКУЩЕЙ СТРАНИЦЫ
+           return True         # ЕСЛИ ВСЕ ХОРОШО, ТО ВОЗВРАЩАЕТСЯ ЗНАЧЕНИЕ TRUE
+       except:
+           return False        # ЕСЛИ ВСЕ ПЛОХО, ВОЗВРАЩАЕТС ЗНАЧЕНИЕ FALSE
+
 
     def open_home_page(self): # вспомогательный метод который открывает нужную страницу
         wd = self.wd
