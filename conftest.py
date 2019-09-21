@@ -2,7 +2,7 @@
 import pytest
 from fixture.application import Application
 
-fixture = None  # ГЛОБАЛЬНАЯ ПЕРЕМЕННАЯ
+fixture = None  # ГЛОБАЛЬНАЯ ПЕРЕ
 
 
 @pytest.fixture
