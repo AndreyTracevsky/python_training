@@ -1,13 +1,15 @@
-# фУНКЦИЯ LOGIN И LOGOUT ПЕРЕМЕЩЕНЫ ИЗ ТЕСТОВЫХ МЕТОДОВ В РАЗНЫЕ ФИКСТУРЫ .
+#  фУНКЦИЯ LOGIN И LOGOUT ПЕРЕМЕЩЕНЫ ИЗ ТЕСТОВЫХ МЕТОДОВ В РАЗНЫЕ ФИКСТУРЫ .
 import pytest
 from fixture.application import Application
 
-fixture = None  # ГЛОБАЛЬНАЯ ПЕРЕ
+fixture = None  # ГЛОБАЛЬНАЯ ПЕРЕМЕННАЯ
 
 
-@pytest.fixture
+@pytest.fixture  # эта фикстура отвечает за авторизацию
 def app(request):
+
     global fixture
+
     if fixture is None:
         fixture = Application()
 
@@ -17,7 +19,7 @@ def app(request):
     fixture.session.ensure_login(username="admin", password="secret")
     return fixture
 
-
+# В этой фикстуре запуск тетстов проходит в одной сессии браузера
 @pytest.fixture(scope="session", autouse=True)
 def stop(request):
     def fin():

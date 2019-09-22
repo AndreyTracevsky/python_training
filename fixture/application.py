@@ -1,4 +1,4 @@
-'''В данном файле происходит инициализация Web Driver, а также открытие необходимой страницы в браузере'''
+'''В данном файле происходит инициализация Web Driver, а также открытие необходимой страницы в браузере.'''
 from selenium.webdriver.firefox.webdriver import WebDriver
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper

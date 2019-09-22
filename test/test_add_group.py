@@ -1,4 +1,4 @@
-from model.group import Group # импортируем вспомогательные методы для запуска тестов
+from model.group import Group # импортируем вспомогательные методы для запуска тестов.
 
 # ТЕСТОВЫЕ МЕТОДЫ
 def test_add_group(app):
