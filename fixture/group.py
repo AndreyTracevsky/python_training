@@ -54,3 +54,7 @@ class GroupHelper:
     def open_groups_page(self): # открытие страницы групп
         wd = self.app.wd
         wd.find_element_by_link_text("groups").click()
+
+    def count(self): # метод который производит подсчет всех имеющихся групп
+        wd = self.app.wd
+        return len(wd.find_elements_by_name("selected[]"))
