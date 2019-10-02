@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a10b6a2c-2ba6-4a38-bacf-458567428637" name="Default Changelist" comment="">
+    <list default="true" id="a10b6a2c-2ba6-4a38-bacf-458567428637" name="Default Changelist" comment="Перенес функции отвечающие за login и logout из тестовых методов в файл confest.py. В файле confest.py созданно две фикстуры: 1) Отвечает за login, также в ней выполняется проверка на валидность фикстуры (если фикстура валидна или невалидна, то выполняется инициализация фикстуры и выполняется login.). 2) Отвечает за выполнение logout и выполнение destroy фикстуры.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,37 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_modify_group.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_del_group.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="105" selection-start-line="6" selection-start-column="105" selection-end-line="6" selection-end-column="105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conftest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            <state relative-caret-position="17">
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -51,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state relative-caret-position="924">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -60,8 +34,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="170">
               <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <folding>
+                <element signature="e#108#166#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,17 +46,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fixture/group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="57" column="76" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
+            <state relative-caret-position="174">
+              <caret line="12" column="153" selection-start-line="12" selection-start-column="153" selection-end-line="12" selection-end-column="153" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/group.py">
+        <entry file="file://$PROJECT_DIR$/test/test_del_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="147">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -107,25 +84,25 @@
         <option value="$PROJECT_DIR$/application.py" />
         <option value="$PROJECT_DIR$/test_add_group.py" />
         <option value="$PROJECT_DIR$/test/conftest.py" />
+        <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/fixture/__init__.py" />
         <option value="$PROJECT_DIR$/model/__init__.py" />
         <option value="$PROJECT_DIR$/test/__init__.py" />
         <option value="$PROJECT_DIR$/model/group.py" />
-        <option value="$PROJECT_DIR$/conftest.py" />
-        <option value="$PROJECT_DIR$/test/test_add_group.py" />
         <option value="$PROJECT_DIR$/test/test_modify_group.py" />
-        <option value="$PROJECT_DIR$/fixture/session.py" />
-        <option value="$PROJECT_DIR$/fixture/application.py" />
         <option value="$PROJECT_DIR$/test/test_del_group.py" />
+        <option value="$PROJECT_DIR$/test/test_add_group.py" />
+        <option value="$PROJECT_DIR$/conftest.py" />
+        <option value="$PROJECT_DIR$/fixture/application.py" />
         <option value="$PROJECT_DIR$/fixture/group.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-96" />
+    <option name="y" value="49" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -135,7 +112,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,13 +138,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/env/Scripts/pytest.exe" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -190,8 +166,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test">
-    <configuration name="pytest for test_add_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest">
+    <configuration name="Unittests in test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -200,25 +176,39 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_add_group&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python_training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_del_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\tracevsky\PycharmProjects\python_training\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_del_group&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_del_group.test_delete_first_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_del_group.test_delete_first_group&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_add_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -251,21 +241,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_modify_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python_training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_modify_group.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -281,21 +256,36 @@
       <option name="_new_targetType" value="&quot;CUSTOM&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;CUSTOM&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python tests.pytest" />
-      <item itemvalue="Python tests.pytest in test" />
+      <item itemvalue="Python tests.pytest for test_del_group" />
+      <item itemvalue="Python tests.Unittests in test" />
       <item itemvalue="Python tests.pytest in test_add_group.py" />
-      <item itemvalue="Python tests.pytest for test_add_group" />
-      <item itemvalue="Python tests.pytest in test_modify_group.py" />
       <item itemvalue="Python tests.pytest in test_del_group.py" />
+      <item itemvalue="Python tests.pytest for test_del_group.test_delete_first_group" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test" />
-        <item itemvalue="Python tests.pytest in test_del_group.py" />
-        <item itemvalue="Python tests.pytest in test_modify_group.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
-        <item itemvalue="Python tests.pytest for test_add_group" />
+        <item itemvalue="Python tests.pytest for test_del_group.test_delete_first_group" />
+        <item itemvalue="Python tests.pytest for test_del_group" />
+        <item itemvalue="Python tests.pytest in test_del_group.py" />
+        <item itemvalue="Python tests.Unittests in test" />
       </list>
     </recent_temporary>
   </component>
@@ -352,109 +342,78 @@
       <option name="project" value="LOCAL" />
       <updated>1568627645229</updated>
     </task>
-    <task id="LOCAL-00007" summary="ВНИМАТЕЛЬНЕЕ надо писать код!!! Из-за того что вместо logout в коде было записанно loguot, тесты не отрабатывались. Прописать новые коментарии к файлам с расширением *.py.">
-      <created>1568921901992</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1568921901992</updated>
-    </task>
-    <task id="LOCAL-00008" summary="ВНИМАТЕЛЬНЕЕ надо писать код!!! Из-за того что вместо logout в коде было записанно loguot, тесты не отрабатывались. Прописать новые коментарии к файлам с расширением *.py.">
-      <created>1569069141135</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1569069141135</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Добавленно предусловие в удаление &quot;первой&quot; в списке группы. Предусловие &#10;заключается в том, что если на странице &quot;Group_page&quot; нет ни одной группы,&#10;то сначала происходит создание группы, а затем удаление этой группы. &#10;Если не будет этого предусловия и на странице &quot;Group_page&quot; не будет ни &#10;одной группы, то код отработает с ошибкой.">
-      <created>1569479330635</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1569479330636</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test - 2019.09.23 at 14h 51m 28s.xml">
-      <configuration name="pytest in test" configurationId="tests" />
+    <history-entry file="pytest - 2019.10.02 at 09h 44m 32s.xml">
+      <configuration name="pytest" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test - 2019.09.23 at 16h 58m 58s.xml">
-      <configuration name="pytest in test" configurationId="tests" />
+    <history-entry file="pytest - 2019.10.02 at 09h 47m 04s.xml">
+      <configuration name="pytest" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test - 2019.09.23 at 17h 00m 28s.xml">
-      <configuration name="pytest in test" configurationId="tests" />
+    <history-entry file="pytest - 2019.10.02 at 09h 50m 30s.xml">
+      <configuration name="pytest" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_del_group_py - 2019.09.25 at 16h 47m 09s.xml">
+    <history-entry file="pytest - 2019.10.02 at 09h 52m 12s.xml">
+      <configuration name="pytest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest - 2019.10.02 at 09h 53m 21s.xml">
+      <configuration name="pytest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_del_group_py - 2019.10.02 at 10h 18m 22s.xml">
       <configuration name="pytest in test_del_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_del_group_py - 2019.09.25 at 16h 47m 53s.xml">
-      <configuration name="pytest in test_del_group.py" configurationId="tests" />
+    <history-entry file="pytest_for_test_del_group - 2019.10.02 at 10h 18m 50s.xml">
+      <configuration name="pytest for test_del_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_del_group_py - 2019.09.25 at 16h 59m 15s.xml">
-      <configuration name="pytest in test_del_group.py" configurationId="tests" />
+    <history-entry file="pytest_for_test_del_group_test_delete_first_group - 2019.10.02 at 10h 19m 11s.xml">
+      <configuration name="pytest for test_del_group.test_delete_first_group" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_del_group_py - 2019.09.26 at 09h 13m 20s.xml">
-      <configuration name="pytest in test_del_group.py" configurationId="tests" />
+    <history-entry file="pytest_in_test_add_group_py - 2019.10.02 at 10h 19m 18s.xml">
+      <configuration name="pytest in test_add_group.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_del_group_py - 2019.09.26 at 09h 14m 18s.xml">
-      <configuration name="pytest in test_del_group.py" configurationId="tests" />
+    <history-entry file="pytest - 2019.10.02 at 10h 21m 42s.xml">
+      <configuration name="pytest" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_del_group_py - 2019.09.26 at 09h 15m 24s.xml">
-      <configuration name="pytest in test_del_group.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test - 2019.09.26 at 09h 20m 02s.xml">
-      <configuration name="pytest in test" configurationId="tests" />
-    </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12750264" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12750264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49789253" visible="true" weight="0.45612136" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894625" weight="0.45612136" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32719395" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49894625" weight="0.32936078" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4996881" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021075" side_tool="true" weight="0.45612136" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50105375" side_tool="true" weight="0.45612136" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12708333" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49789253" weight="0.45612136" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.08342362" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39907727" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32719395" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49894625" weight="0.32936078" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.4996881" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021075" side_tool="true" weight="0.45612136" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.08342362" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -507,9 +466,7 @@
     <MESSAGE value="Пока еще работающий код" />
     <MESSAGE value="Выяснил причину почему валяться тесты запущенные в одной сессии браузера. В файл session.py в методе logout(self) нехатало строчки wd.find_element_by_name(&quot;user&quot;). Тесты запустились в одной сессии браузера:). Файл conftest.py перемещен в корень папки python_training, это сделано для того чтобы фикстура была всегда доступна." />
     <MESSAGE value="Переписал коментарии в файлах. Надеюсь не запутаюсь." />
-    <MESSAGE value="ВНИМАТЕЛЬНЕЕ надо писать код!!! Из-за того что вместо logout в коде было записанно loguot, тесты не отрабатывались. Прописать новые коментарии к файлам с расширением *.py." />
-    <MESSAGE value="Добавленно предусловие в удаление &quot;первой&quot; в списке группы. Предусловие &#10;заключается в том, что если на странице &quot;Group_page&quot; нет ни одной группы,&#10;то сначала происходит создание группы, а затем удаление этой группы. &#10;Если не будет этого предусловия и на странице &quot;Group_page&quot; не будет ни &#10;одной группы, то код отработает с ошибкой." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавленно предусловие в удаление &quot;первой&quot; в списке группы. Предусловие &#10;заключается в том, что если на странице &quot;Group_page&quot; нет ни одной группы,&#10;то сначала происходит создание группы, а затем удаление этой группы. &#10;Если не будет этого предусловия и на странице &quot;Group_page&quot; не будет ни &#10;одной группы, то код отработает с ошибкой." />
+    <option name="LAST_COMMIT_MESSAGE" value="Переписал коментарии в файлах. Надеюсь не запутаюсь." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/python_training.iml">
@@ -536,38 +493,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/six.py">
+    <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="692" selection-start-line="692" selection-end-line="692" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        <state relative-caret-position="232">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_modify_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+        <state relative-caret-position="170">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -578,41 +514,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/application.py">
+    <entry file="file://$PROJECT_DIR$/test/test_del_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="147">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_del_group.py">
+    <entry file="file://$PROJECT_DIR$/fixture/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="105" selection-start-line="6" selection-start-column="105" selection-end-line="6" selection-end-column="105" />
+        <state relative-caret-position="170">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="e#108#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture/group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="57" column="76" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
+        <state relative-caret-position="174">
+          <caret line="12" column="153" selection-start-line="12" selection-start-column="153" selection-end-line="12" selection-end-column="153" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

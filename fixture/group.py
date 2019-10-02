@@ -8,7 +8,9 @@ class GroupHelper:
 
     def return_to_groups_page(self): # возврат на страницу с группами
         wd = self.app.wd
-        wd.find_element_by_link_text("group page").click()
+        if wd.current_url.endswith("/group.php") and len(wd.find_elements_by_name("new")) > 0: # предусловие которое проверяет, что мы находимся на нужной старнице.
+            return                                                                             # проверка выполняется по двум условиям (URL заканчиается на "/group.php" ->
+        wd.find_element_by_link_text("group page").click()                                     # -> и на странице присутствует элемент с названием "New".
 
     def create(self, group): # создание группы, включает в себя открытие страницы с группами, заполнение полей и др
         wd = self.app.wd
